@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crestwood Schools | I Serve to Lead</title>
+
+<style>
+:root{
+    --blue:#102a72;
+    --blue2:#1747b8;
+    --gold:#f7c928;
+    --white:#ffffff;
+    --light:#f5f7fc;
+    --text:#26324a;
+    --muted:#667085;
+    --shadow:0 15px 40px rgba(16,42,114,.12);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--text);
+    background:var(--white);
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(1120px,92%);
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(16,42,114,.97);
+    box-shadow:0 5px 25px rgba(0,0,0,.15);
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+}
+
+.logo{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:var(--gold);
+    color:var(--blue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:900;
+    font-size:18px;
+    border:4px solid white;
+}
+
+.brand h1{
+    font-size:20px;
+    letter-spacing:1px;
+}
+
+.brand span{
+    display:block;
+    color:var(--gold);
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+nav{
+    display:flex;
+    gap:24px;
+}
+
+nav a{
+    color:white;
+    font-weight:bold;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:var(--gold);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:680px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(135deg,rgba(9,30,91,.98),rgba(23,71,184,.92)),
+        radial-gradient(circle at 80% 20%,#f7c928,transparent 25%);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    border:70px solid rgba(247,201,40,.12);
+    border-radius:50%;
+    right:-180px;
+    top:-150px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    max-width:760px;
+    padding:80px 0;
+}
+
+.hero-tag{
+    color:var(--gold);
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin-bottom:18px;
+}
+
+.hero h2{
+    font-size:clamp(42px,7vw,78px);
+    line-height:1;
+    margin-bottom:25px;
+    letter-spacing:-2px;
+}
+
+.hero h2 span{
+    color:var(--gold);
+}
+
+.hero p{
+    font-size:20px;
+    max-width:680px;
+    color:#eef2ff;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 28px;
+    border-radius:35px;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.btn-gold{
+    background:var(--gold);
+    color:var(--blue);
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:90px 0;
+}
+
+.section-heading{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 50px;
+}
+
+.section-heading .small{
+    color:var(--gold);
+    font-weight:bold;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+    color:var(--blue);
+    font-size:42px;
+    margin:8px 0 12px;
+}
+
+.section-heading p{
+    color:var(--muted);
+    font-size:17px;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:var(--light);
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.about-box{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:var(--shadow);
+}
+
+.about-box h3{
+    color:var(--blue);
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.about-box p{
+    color:var(--muted);
+    margin-bottom:15px;
+}
+
+.highlight{
+    border-left:5px solid var(--gold);
+    padding-left:20px;
+    margin-top:25px;
+}
+
+/* ================= VISION ================= */
+
+.vision{
+    background:var(--blue);
+    color:white;
+}
+
+.vision .section-heading h2{
+    color:white;
+}
+
+.vision-card{
+    max-width:850px;
+    margin:auto;
+    background:linear-gradient(135deg,#1747b8,#0d2b7b);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:30px;
+    padding:55px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
+
+.vision-card h3{
+    color:var(--gold);
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.vision-card p{
+    font-size:20px;
+    color:#eef2ff;
+}
+
+/* ================= VALUES ================= */
+
+.values-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.value-card{
+    padding:35px 25px;
+    text-align:center;
+    background:white;
+    border-radius:22px;
+    box-shadow:var(--shadow);
+    border-top:5px solid var(--gold);
+    transition:.3s;
+}
+
+.value-card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:var(--blue);
+    color:var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:900;
+    font-size:22px;
+}
+
+.value-card h3{
+    color:var(--blue);
+    margin-bottom:10px;
+}
+
+.value-card p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+/* ================= PROGRAMS ================= */
+
+.programs{
+    background:var(--light);
+}
+
+.program-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.program-card{
+    background:white;
+    border-radius:25px;
+    padding:38px 30px;
+    box-shadow:var(--shadow);
+    border-bottom:6px solid var(--gold);
+    transition:.3s;
+}
+
+.program-card:hover{
+    transform:translateY(-8px);
+}
+
+.program-number{
+    font-size:13px;
+    color:var(--gold);
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.program-card h3{
+    color:var(--blue);
+    font-size:25px;
+    margin:10px 0 15px;
+}
+
+.program-card p{
+    color:var(--muted);
+}
+
+/* ================= WHY CRESTWOOD ================= */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.why-card{
+    padding:35px;
+    border-radius:22px;
+    background:#fff;
+    box-shadow:var(--shadow);
+}
+
+.why-card h3{
+    color:var(--blue);
+    margin-bottom:10px;
+}
+
+.why-card p{
+    color:var(--muted);
+}
+
+/* ================= ADMISSIONS ================= */
+
+.admissions{
+    background:linear-gradient(135deg,var(--blue),var(--blue2));
+    color:white;
+    text-align:center;
+}
+
+.admissions h2{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.admissions p{
+    max-width:700px;
+    margin:0 auto 30px;
+    font-size:19px;
+    color:#eef2ff;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:var(--light);
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-card{
+    background:var(--blue);
+    color:white;
+    padding:40px;
+    border-radius:28px;
+}
+
+.contact-card h3{
+    color:var(--gold);
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.contact-item{
+    margin:18px 0;
+    font-size:18px;
+}
+
+.contact-item strong{
+    color:var(--gold);
+}
+
+.contact-form{
+    background:white;
+    padding:40px;
+    border-radius:28px;
+    box-shadow:var(--shadow);
+}
+
+.form-group{
+    margin-bottom:16px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:15px 18px;
+    border:1px solid #d8deea;
+    border-radius:12px;
+    font:inherit;
+    outline:none;
+}
+
+.form-group textarea{
+    min-height:140px;
+    resize:vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color:var(--blue2);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#081c52;
+    color:white;
+    text-align:center;
+    padding:45px 20px;
+}
+
+footer h2{
+    color:var(--gold);
+    margin-bottom:8px;
+}
+
+footer p{
+    color:#dbe3ff;
+    margin:6px 0;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
+
+    .nav{
+        flex-direction:column;
+        padding:15px 0;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:13px;
+    }
+
+    .hero{
+        min-height:620px;
+    }
+
+    .hero-content{
+        text-align:center;
+        margin:auto;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .values-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .program-grid,
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:70px 0;
+    }
+
+    .section-heading h2{
+        font-size:34px;
+    }
+
+    .admissions h2{
+        font-size:38px;
+    }
+}
+
+@media(max-width:520px){
+
+    .brand h1{
+        font-size:16px;
+    }
+
+    .brand span{
+        font-size:10px;
+    }
+
+    .logo{
+        width:45px;
+        height:45px;
+    }
+
+    .hero h2{
+        font-size:46px;
+    }
+
+    .values-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-box,
+    .vision-card,
+    .contact-card,
+    .contact-form{
+        padding:28px 22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+<div class="container nav">
+
+<a href="#home" class="brand">
+<div class="logo">CS</div>
+<div>
+<h1>CRESTWOOD SCHOOLS</h1>
+<span>I SERVE TO LEAD</span>
+</div>
+</a>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#values">Values</a>
+<a href="#programs">Programs</a>
+<a href="#admissions">Admissions</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+<div class="container">
+<div class="hero-content">
+
+<div class="hero-tag">I SERVE TO LEAD</div>
+
+<h2>
+CRESTWOOD<br>
+<span>SCHOOLS</span>
+</h2>
+
+<p>
+Where character meets class. We nurture knowledge,
+values, skills and responsible leadership for a brighter future.
+</p>
+
+<div class="buttons">
+<a href="#admissions" class="btn btn-gold">
+ENQUIRE NOW
+</a>
+
+<a href="#about" class="btn btn-outline">
+DISCOVER CRESTWOOD
+</a>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="small">WELCOME</div>
+<h2>Building Tomorrow's Leaders</h2>
+<p>
+A school built on values, vision and excellence.
+</p>
+</div>
+
+<div class="about-grid">
+
+<div class="about-box">
+<h3>Welcome to Crestwood</h3>
+
+<p>
+Crestwood Schools is committed to providing quality
+education in an environment where every learner is
+encouraged to grow, serve and lead.
+</p>
+
+<p>
+We believe education is more than academic success.
+It is about developing character, confidence,
+discipline, creativity and a strong sense of responsibility.
+</p>
+
+<div class="highlight">
+<strong>I SERVE TO LEAD</strong><br>
+Service before self. Excellence in everything we do.
+</div>
+
+</div>
+
+<div class="about-box">
+<h3>Our Purpose</h3>
+
+<p>
+We aim to create an environment where children can
+discover their abilities, develop their talents and
+prepare for meaningful leadership in society.
+</p>
+
+<p>
+At Crestwood, every learner matters and every learner
+has the opportunity to become better.
+</p>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= VISION ================= -->
+
+<section class="vision">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="small">OUR DIRECTION</div>
+<h2>Our Vision</h2>
+</div>
+
+<div class="vision-card">
+
+<h3>Knowledge • Values • Skills • Leadership</h3>
+
+<p>
+To develop confident, disciplined and responsible young
+people equipped with knowledge, values and skills to make
+a positive difference in their communities and beyond.
+</p>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= VALUES ================= -->
+
+<section id="values">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="small">WHAT WE STAND FOR</div>
+<h2>Our Core Values</h2>
+<p>
+The foundation of the Crestwood experience.
+</p>
+</div>
+
+<div class="values-grid">
+
+<div class="value-card">
+<div class="icon">E</div>
+<h3>Excellence</h3>
+<p>
+We encourage every learner to pursue excellence
+in academics, talents, character and service.
+</p>
+</div>
+
+<div class="value-card">
+<div class="icon">I</div>
+<h3>Integrity</h3>
+<p>
+We teach honesty, responsibility, respect and
+doing what is right even when nobody is watching.
+</p>
+</div>
+
+<div class="value-card">
+<div class="icon">L</div>
+<h3>Leadership</h3>
+<p>
+We develop learners who understand that true
+leadership begins with service.
+</p>
+</div>
+
+<div class="value-card">
+<div class="icon">S</div>
+<h3>Service</h3>
+<p>
+We inspire learners to serve others and make
+a positive contribution to society.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= PROGRAMS ================= -->
+
+<section class="programs" id="programs">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="small">LEARNING AT CRESTWOOD</div>
+<h2>Our Programs</h2>
+<p>
+Growing learners from foundation to excellence.
+</p>
+</div>
+
+<div class="program-grid">
+
+<div class="program-card">
+<div class="program-number">01 • FOUNDATION</div>
+<h3>Early Years</h3>
+<p>
+A strong foundation for young learners through
+care, creativity, play and discovery.
+</p>
+</div>
+
+<div class="program-card">
+<div class="program-number">02 • ACADEMIC</div>
+<h3>Primary Education</h3>
+<p>
+Quality learning combined with discipline,
+values, confidence and practical skills.
+</p>
+</div>
+
+<div class="program-card">
+<div class="program-number">03 • DEVELOPMENT</div>
+<h3>Talents & Leadership</h3>
+<p>
+Sports, music, arts, creativity and leadership
+opportunities that help every learner discover
+their potential.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= WHY CRESTWOOD ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-heading">
+<div class="small">THE CRESTWOOD DIFFERENCE</div>
+<h2>Why Choose Crestwood?</h2>
+<p>
+We develop the whole child — mind, character and ability.
+</p>
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+<h3>Quality Education</h3>
+<p>
+Strong academic foundations designed to help learners
+develop confidence and a lifelong love for learning.
+</p>
+</div>
+
+<div class="why-card">
+<h3>Character & Discipline</h3>
+<p>
+We intentionally develop respect, responsibility,
+integrity and self-discipline.
+</p>
+</div>
+
+<div class="why-card">
+<h3>Leadership Through Service</h3>
+<p>
+Our motto is lived through opportunities for learners
+to serve, participate and lead.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= ADMISSIONS ================= -->
+
+<section class="admissions" id="admissions">
+
+<div class="container">
+
+<h2>Admissions Are Open</h2>
+
+<p>
+Give your child an opportunity to learn, grow,
+serve and lead at Crestwood Schools.
+</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a href="#contact" class="btn btn-gold">
+CONTACT US TODAY
+</a>
+
+<a href="tel:0780471599" class="btn btn-outline">
+CALL 0780 471 599
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="small">GET IN TOUCH</div>
+<h2>We Would Love to Hear From You</h2>
+<p>
+Contact Crestwood Schools for admissions and enquiries.
+</p>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>Crestwood Schools</h3>
+
+<div class="contact-item">
+<strong>Phone</strong><br>
+<a href="tel:0780471599">0780 471 599</a>
+</div>
+
+<div class="contact-item">
+<strong>WhatsApp</strong><br>
+<a href="https://wa.me/256760485703">
+0760 485 703
+</a>
+</div>
+
+<div class="contact-item">
+<strong>Motto</strong><br>
+I SERVE TO LEAD
+</div>
+
+<div class="contact-item">
+<strong>Our Promise</strong><br>
+Quality Education • Discipline • Excellence
+</div>
+
+</div>
+
+
+<div class="contact-form">
+
+<form onsubmit="sendMessage(event)">
+
+<div class="form-group">
+<input id="name" type="text" placeholder="Your Name" required>
+</div>
+
+<div class="form-group">
+<input id="phone" type="tel" placeholder="Phone Number" required>
+</div>
+
+<div class="form-group">
+<input id="email" type="email" placeholder="Email Address">
+</div>
+
+<div class="form-group">
+<textarea id="message" placeholder="How can we help you?" required></textarea>
+</div>
+
+<button class="btn btn-gold" type="submit">
+SEND MESSAGE
+</button>
+
+</form>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h2>CRESTWOOD SCHOOLS</h2>
+
+<p>I SERVE TO LEAD</p>
+
+<p>
+© 2026 Crestwood Schools. All Rights Reserved.
+</p>
+
+</footer>
+
+
+<script>
+
+function sendMessage(event){
+
+event.preventDefault();
+
+const name =
+document.getElementById("name").value;
+
+const phone =
+document.getElementById("phone").value;
+
+const email =
+document.getElementById("email").value;
+
+const message =
+document.getElementById("message").value;
+
+const text =
+`Hello Crestwood Schools.
+
+My name is ${name}.
+Phone: ${phone}.
+Email: ${email}.
+
+${message}`;
+
+const whatsapp =
+"https://wa.me/256760485703?text="
++ encodeURIComponent(text);
+
+window.open(whatsapp,"_blank");
+
+}
+
+</script>
+
+</body>
+</html>
