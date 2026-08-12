@@ -68,17 +68,22 @@ header{
 }
 
 .logo{
-    width:52px;
-    height:52px;
-    border-radius:50%;
-    background:var(--gold);
-    color:var(--blue);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:900;
-    font-size:18px;
-    border:4px solid white;
+   width:58px;
+height:58px;
+border-radius:50%;
+overflow:hidden;
+background:white;
+border:3px solid var(--gold);
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+.logo img{
+    Width:100%;
+    Height:100%;
+    Object-fit:contain;
+    Display:block;
 }
 
 .brand h1{
@@ -112,7 +117,7 @@ nav a:hover{
 /* ================= HERO ================= */
 
 .hero{
-    min-height:680px;
+    min-height:720px;
     display:flex;
     align-items:center;
     position:relative;
@@ -125,7 +130,7 @@ nav a:hover{
 .hero::before{
     content:"";
     position:absolute;
-    width:500px;
+    width:560px;
     height:500px;
     border:70px solid rgba(247,201,40,.12);
     border-radius:50%;
@@ -151,7 +156,7 @@ nav a:hover{
 
 .hero h2{
     font-size:clamp(42px,7vw,78px);
-    line-height:1;
+    line-height:1.05;
     margin-bottom:25px;
     letter-spacing:-2px;
 }
@@ -586,6 +591,15 @@ footer p{
         height:45px;
     }
 
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
+
+    
+
     .hero h2{
         font-size:46px;
     }
@@ -612,7 +626,7 @@ footer p{
 <div class="container nav">
 
 <a href="#home" class="brand">
-<div class="logo">CS</div>
+<div class="logo"><img src="Badge.png"alt="Crestwood Schools badge"></div>
 <div>
 <h1>CRESTWOOD SCHOOLS</h1>
 <span>I SERVE TO LEAD</span>
@@ -661,6 +675,10 @@ DISCOVER CRESTWOOD
 </div>
 
 </div>
+<div class="hero-image">
+    <img src="crestwood-pupils.png" alt="Crestwood Schools pupils">
+</div>
+
 </div>
 </section>
 
